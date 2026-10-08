@@ -1,0 +1,1142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69">
+<meta property="og:title" content="PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69">
+<meta property="og:description" content="Read the following passage and answer questions 61–68:">
+<meta name="twitter:title" content="PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69">
+<meta name="twitter:description" content="Read the following passage and answer questions 61–68:">
+<meta name="application-name" content="PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69">
+<title>PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69</title>
+<style>
+:root{--bg:#000;--panel:#090909;--panel2:#111;--line:#292929;--text:#fff;--muted:#aaa;--green:#18e76b;--red:#ff3152;--gold:#ffd45a;--blue:#5f8cff}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;overflow:hidden}
+body.light{--bg:#f4f6fa;--panel:#fff;--panel2:#f1f3f7;--line:#d8dce5;--text:#111;--muted:#626a78;--gold:#8b5d00;--blue:#315fce}
+button,input{font:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.hidden{display:none!important}
+.topbar{position:fixed;left:0;right:0;top:0;height:68px;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 12px;background:rgba(0,0,0,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+body.light .topbar{background:rgba(255,255,255,.95)}
+.leftbox{justify-self:start}
+.rightbox{justify-self:end;display:flex;align-items:center;gap:8px}
+.centerbox{justify-self:center;text-align:center;min-width:100px}
+.themeBtn,.adminBtn,.correctBtn{border:1px solid #444;border-radius:11px;padding:9px 12px;background:#111;color:#fff;font-weight:1000;letter-spacing:.03em}
+body.light .themeBtn,body.light .adminBtn,body.light .correctBtn{background:#fff;color:#111;border-color:#c4c9d3}
+.adminBtn{background:var(--gold);color:#000;border-color:var(--gold)}
+.correctBtn{display:block;margin:auto;background:#0b301b;border-color:#1e9c52;color:#69ff9d;min-width:110px}
+.timer.timerHidden{display:none!important}
+.timer{margin-top:3px;font-variant-numeric:tabular-nums;font-size:18px;font-weight:1000;letter-spacing:.04em}
+.timer.warn{color:#fff!important;animation:timerBlink .48s steps(2,start) infinite!important;transform:scale(1.32);text-shadow:0 0 6px #fff,0 0 16px var(--red),0 0 32px var(--red),0 0 48px #ff8a00;font-size:clamp(24px,4vw,34px)!important;letter-spacing:.08em}@keyframes timerBlink{0%,100%{opacity:1;filter:brightness(1.2);transform:scale(1.32)}50%{opacity:.28;filter:brightness(2.3);transform:scale(1.5)}}
+.screen{position:fixed;inset:68px 0 0;display:flex;align-items:center;justify-content:center;padding:18px}
+.startCard{width:min(560px,92vw);background:linear-gradient(180deg,#101010,#070707);border:1px solid #2a2a2a;border-radius:24px;padding:30px;box-shadow:0 25px 90px rgba(0,0,0,.65)}
+body.light .startCard{background:#fff;border-color:#d8dce5;box-shadow:0 20px 60px rgba(0,0,0,.10)}
+.brand{margin:0;text-align:center;font-size:clamp(30px,6vw,46px);font-weight:1000;letter-spacing:.10em}
+label{display:block;margin:28px 0 9px;font-weight:1000;font-size:18px}
+.name{width:100%;height:56px;border:1px solid #3a3a3a;border-radius:14px;background:#050505;color:#fff;padding:0 16px;outline:none;font-weight:800;font-size:18px}
+body.light .name{background:#f8f9fc;color:#111;border-color:#cfd4de}
+.name:focus{border-color:var(--blue)}
+.startBtn{width:100%;height:58px;margin-top:12px;border:0;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:18px;letter-spacing:.04em}
+.exam{position:fixed;inset:68px 0 0;height:calc(100dvh - 68px);padding:10px 12px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.examInner{width:min(1100px,100%);max-width:1100px;margin:auto;display:block;min-height:0;padding-bottom:24px}
+.progress{height:58px;color:var(--muted);font-size:13px;font-weight:1000;padding:0 3px;display:block}
+.progressTop{height:28px;display:flex;align-items:center;justify-content:space-between;gap:8px;line-height:1.05}
+.progressTop span{font-weight:1000}
+.progressTrack{height:4px;width:100%;border-radius:999px;background:#ff3152;border:1px solid rgba(255,49,82,.65);overflow:hidden;box-shadow:inset 0 0 5px rgba(0,0,0,.35),0 0 5px rgba(255,49,82,.14)}
+.progressFill{height:100%;width:0%;background:#18e76b;border-radius:999px;transition:width .35s ease;box-shadow:0 0 7px rgba(24,231,107,.55)}
+.progressFill.done{background:#18e76b;box-shadow:0 0 9px rgba(24,231,107,.7)}
+.qcard{min-height:0;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:0;display:flex;flex-direction:column;box-shadow:0 18px 70px rgba(0,0,0,.35);overflow:hidden;position:relative}.questionScroll{overflow:visible;padding:clamp(14px,2.2vh,22px);padding-bottom:18px;-webkit-overflow-scrolling:touch}.actions{margin:0;padding:10px clamp(14px,2.2vh,22px);border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:var(--panel);z-index:5;box-shadow:0 -8px 18px rgba(0,0,0,.18)}
+.qnum{color:var(--gold);font-weight:1000;font-size:15px;margin-bottom:7px}
+.question{font-size:clamp(16px,2.3vh,21px);line-height:1.38;font-weight:800;max-width:1000px}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:clamp(12px,2vh,18px)}
+.opt{min-height:54px;border:1px solid #333;border-radius:13px;background:var(--panel2);color:var(--text);padding:11px 13px;text-align:left;display:flex;gap:10px;align-items:flex-start;font-weight:750;line-height:1.28;font-size:clamp(14px,1.9vh,17px);transition:.12s}
+.opt:active{transform:scale(.995)}
+.opt.selected{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue) inset}
+.opt:disabled{opacity:1!important;filter:none!important;color:inherit}
+.opt.correct{background:#123e23;border-color:#18e76b;color:#70ff9f;box-shadow:0 0 0 1px #18e76b inset}
+.opt.wrong{background:#470b17;border-color:#ff3152;color:#ff91a4;box-shadow:0 0 0 1px #ff3152 inset}
+.letter{font-weight:1000;min-width:24px}
+.feedback{min-height:26px;margin-top:7px;font-size:13px;font-weight:1000;max-height:none;overflow:visible;padding-right:4px;line-height:1.5;flex-shrink:0}
+.feedback.ok{color:var(--green)} .feedback.bad{color:var(--text)}
+.wrong-title{color:var(--red);font-size:16px;font-weight:1000;margin-bottom:6px}.explain{color:var(--green);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;max-height:30vh;overflow-y:auto;line-height:1.6;font-weight:750}
+.timer.warn{color:#fff;background:linear-gradient(135deg,#ff1744,#ff6b00,#ffd400,#ff1744);background-size:300% 300%;padding:6px 14px;border-radius:14px;font-size:clamp(22px,4vw,34px);line-height:1;box-shadow:0 0 10px #ff1744,0 0 24px #ff6b00,0 0 42px rgba(255,212,0,.8);text-shadow:0 0 7px #fff,0 0 16px #ff1744;animation:timerGlow 1.15s ease-in-out infinite,timerGradient 2s linear infinite;transform:scale(1.12)}
+@keyframes timerGlow{0%,100%{opacity:1;transform:scale(1.12)}50%{opacity:.55;transform:scale(1.22)}}
+@keyframes timerGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.actions{margin-top:auto;padding-top:10px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;flex-shrink:0;background:var(--panel)}
+.allQuestion{padding:18px 0 22px;border-bottom:1px solid var(--line)}
+.allQuestion:first-child{padding-top:4px}
+.allQuestion:last-of-type{border-bottom:0}
+.finalSubmitArea{padding:22px 0 4px;text-align:center}
+.submitHint{color:var(--muted);font-weight:750;font-size:13px;line-height:1.45;margin-bottom:10px}
+.finalSubmitBtn{width:min(420px,100%);height:58px;background:#fff;color:#000;border-color:#fff;font-size:19px;box-shadow:0 8px 24px rgba(255,255,255,.12)}
+.finalSubmitBtn:active{transform:scale(.985)}
+.next{width:min(240px,100%);height:54px;border:2px solid #fff;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:18px;transition:.12s;flex-shrink:0}.next.answer-correct{background:#18e76b;border-color:#18e76b;color:#000;box-shadow:0 0 14px rgba(24,231,107,.45)}.next.answer-wrong{background:#ff3152;border-color:#ff3152;color:#fff;animation:shake .45s ease-in-out 0s 2;box-shadow:0 0 14px rgba(255,49,82,.45)}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
+.next:disabled{opacity:.35;cursor:not-allowed}
+.next.tap-vibrate{animation:buttonVibrate .34s linear}
+@keyframes buttonVibrate{0%,100%{transform:translateX(0) scale(1)}20%{transform:translateX(-6px) scale(1.02)}40%{transform:translateX(6px) scale(1.02)}60%{transform:translateX(-5px) scale(1.02)}80%{transform:translateX(4px) scale(1.01)}}
+.revisionBox{margin-top:18px;padding:16px;border:1px solid #ff3152;border-radius:16px;background:linear-gradient(135deg,rgba(255,49,82,.12),rgba(255,212,90,.08));box-shadow:0 0 24px rgba(255,49,82,.12)}
+.revisionTitle{font-size:18px;font-weight:1000;color:#ffd45a}
+.revisionInfo{margin-top:5px;color:var(--muted);font-weight:750;line-height:1.45}
+.revisionLink{display:block;margin:16px auto 6px;width:min(520px,100%);padding:10px 14px;text-align:center;background:none;border:0;color:#ff0000;font-size:22px;font-weight:1000;text-decoration:underline;cursor:pointer;animation:revisionTextBlink .8s steps(1,end) infinite}.revisionLink:active{transform:scale(.98)}
+.revisionBtn{margin-top:11px;width:100%;min-height:54px;border:2px solid #ffd45a;border-radius:13px;background:linear-gradient(90deg,#5b0010,#9d1230,#5b0010);background-size:200% 100%;color:#fff;font-weight:1000;font-size:17px;box-shadow:0 0 12px rgba(255,49,82,.5);animation:revisionPulse 1.5s ease-in-out infinite}
+@keyframes revisionPulse{0%,100%{box-shadow:0 0 10px rgba(255,49,82,.45)}50%{box-shadow:0 0 26px rgba(255,212,90,.8)}}
+.result,.admin{position:fixed;inset:68px 0 0;overflow:auto;padding:18px}
+.resultCard,.adminCard{width:min(1150px,100%);margin:auto;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px}
+.resultTitle{text-align:center;font-weight:1000;letter-spacing:.08em;margin:0}
+.candidate{text-align:center;color:var(--muted);font-weight:800;margin-top:7px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:18px}
+.stat{border:1px solid var(--line);background:var(--panel2);border-radius:14px;padding:13px}
+.stat small{display:block;color:var(--muted);font-weight:800}
+.stat strong{display:block;font-size:22px;margin-top:4px;font-weight:1000}
+.review{margin-top:20px;display:grid;gap:9px}
+.reviewRow{border:1px solid var(--line);border-radius:13px;padding:13px;background:var(--panel2)}
+.reviewQ{font-weight:900;line-height:1.35}
+.reviewA{margin-top:7px;color:var(--muted);font-size:14px;line-height:1.4}
+.tag{display:inline-block;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:1000;margin-left:5px}
+.ok{background:#123e23;color:#70ff9f} .bad{background:#470b17;color:#ff91a4} .skip{background:#303030;color:#bbb}
+.resultActions,.adminTools{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+.resultActions button,.adminTools button{border:1px solid #444;border-radius:11px;padding:11px 13px;background:#111;color:#fff;font-weight:900}
+body.light .resultActions button,body.light .adminTools button{background:#fff;color:#111;border-color:#c4c9d3}
+.danger{border-color:#9d253b!important;color:#ff91a4!important}
+.adminHead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.adminTitle{margin:0;font-weight:1000}
+.tableWrap{overflow:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;min-width:900px}
+th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{color:var(--muted);font-size:12px}
+.empty{padding:30px;text-align:center;color:var(--muted);font-weight:800}
+.status{margin-top:10px;text-align:center;font-size:12px;font-weight:1000}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000}
+@media(max-width:700px){
+ .topbar{height:62px;padding:6px 6px;grid-template-columns:auto 1fr auto;gap:4px;overflow:visible}
+ .leftbox{min-width:0;overflow:visible}
+ .topButtons{gap:4px;flex-wrap:nowrap}
+ .screen,.exam,.result,.admin{inset:62px 0 0}
+ .exam{height:calc(100dvh - 62px);padding:7px 8px}
+ .themeBtn,.adminBtn,.correctBtn{font-size:9px;padding:7px 6px;border-radius:9px;letter-spacing:0}
+ .viewBtn{display:inline-flex!important;visibility:visible!important;opacity:1!important;font-size:8px;padding:7px 5px}
+ .correctBtn{min-width:68px;padding-left:5px;padding-right:5px}
+ .centerbox{min-width:68px}
+ .timer{font-size:15px}
+ .adminBtn{font-size:8px;padding:7px 5px}
+ .startCard{padding:23px}
+ .options{grid-template-columns:1fr;gap:7px}
+ .opt{min-height:49px;padding:9px 11px}
+ .qcard{border-radius:16px;padding:0}.questionScroll{padding:13px;padding-bottom:16px}.actions{padding:8px 13px}
+ .progress{height:42px;font-size:11px}
+ .progressTop{height:25px}
+ .progressTrack{height:15px}
+ .next{height:52px;width:100%}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .result,.admin{padding:10px}
+}
+@media(max-width:360px){
+ .topbar{padding-left:4px;padding-right:4px;gap:2px}
+ .topButtons{gap:2px}
+ .themeBtn{font-size:8px;padding:6px 4px}
+ .viewBtn{font-size:7px;padding:6px 4px}
+ .adminBtn{font-size:7px;padding:6px 4px}
+ .correctBtn{font-size:8px;min-width:62px}
+ .timer{font-size:14px}
+}
+@media(max-height:620px) and (orientation:landscape){
+ .question{font-size:15px;line-height:1.25}
+ .opt{min-height:42px;font-size:13px;padding:7px 9px}
+ .options{gap:6px;margin-top:7px}
+ .qcard{padding:0}
+ .questionScroll{padding:10px;padding-bottom:12px}
+ .actions{padding:7px 10px}
+ .next{height:45px}
+}
+@media print{
+ html,body{overflow:visible;background:#fff!important;color:#000!important}
+ .topbar,.resultActions,.adminTools,#fx{display:none!important}
+ .result,.admin{position:static;overflow:visible;padding:0}
+ .resultCard,.adminCard{border:0;box-shadow:none}
+}
+
+.topButtons{display:flex;align-items:center;gap:6px}
+.viewBtn{font-size:10px;padding:7px 9px;white-space:nowrap}
+.passageBox{max-height:none;overflow:visible;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:8px;box-shadow:0 10px 35px rgba(0,0,0,.25)}
+.passageHead{text-align:center;font-weight:1000;letter-spacing:.06em;color:var(--gold);margin-bottom:9px}
+.passageIntro{font-weight:850;line-height:1.45;margin-bottom:9px}
+.passageText{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.58;font-weight:650}
+@media(max-width:700px){.passageBox{flex-basis:30vh;padding:11px 12px}.passageText{font-size:14px;line-height:1.5}.passageIntro{font-size:12px}}
+@media(max-height:620px) and (orientation:landscape){.passageBox{flex-basis:24vh}.passageText{font-size:13px;line-height:1.38}}
+.viewModeWrap{position:absolute;inset:0;overflow:auto;padding:18px 12px 90px;background:var(--bg)}
+.viewModeInner{width:min(1100px,100%);margin:auto}
+.viewModeHeader{position:sticky;top:0;z-index:4;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px;font-weight:1000;display:flex;justify-content:space-between;gap:10px}
+.viewModeHeader span{color:var(--muted);font-size:12px}
+.viewQuestion{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:10px}
+.viewQuestion .question{margin-bottom:10px}
+.viewQuestion .options{margin-top:8px}
+.viewOnlyOpt{pointer-events:none!important;cursor:default!important;opacity:1!important}
+.viewModeExit{position:sticky;bottom:0;width:100%;height:54px;border:2px solid #fff;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:17px;margin-top:8px}
+body.light .viewModeExit{border-color:#111}
+@media(max-width:700px){
+  .viewBtn{font-size:9px;padding:7px 7px}
+  .viewModeWrap{padding:10px 8px 76px}
+  .viewModeHeader{font-size:12px;padding:10px}
+  .viewQuestion{padding:13px}
+}
+
+</style>
+
+<style id="revision-banner-style">#revisionBanner{display:none;text-align:center;font-weight:800;font-size:22px;line-height:1.4;margin:12px 0;padding:0;background:none;border:none;box-shadow:none;}
+#revisionBanner.show{display:block}
+.revisionStar{color:red;font-weight:800;animation:revisionBlink 1s step-end infinite;text-shadow:none;background:none;}
+.revisionText{color:#16a34a;font-weight:800;animation:revisionBlink 1s step-end infinite;text-shadow:none;background:none;}
+@keyframes revisionTextBlink{0%,100%{opacity:1;filter:brightness(1.1)}50%{opacity:.22;filter:brightness(2.4)}}
+@keyframes revisionStarBlink{0%,100%{opacity:1;filter:brightness(1.1)}50%{opacity:.18;filter:brightness(2.5)}}</style>
+<style id="revisionTextFix">
+.revisionText{
+  color:#ff0000 !important;
+  font-weight:900 !important;
+  font-size:1.12em !important;
+  text-shadow:none !important;
+  background:none !important;
+  border:none !important;
+  animation:revisionTextBlink 0.8s steps(1,end) infinite !important;
+}
+@keyframes revisionTextBlink{
+  0%,49%{opacity:1;visibility:visible}
+  50%,100%{opacity:0;visibility:hidden}
+}
+</style>
+<style id="REAL_EXAM_LAST2_TIMER_ONLY">
+#timer.real-exam-last2{
+  color:#ff0000 !important;
+  background:transparent !important;
+  background-color:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  text-shadow:none !important;
+  animation:realExamLast2Blink 1.8s ease-in-out infinite !important;
+}
+@keyframes realExamLast2Blink{
+  0%,100%{opacity:1}
+  50%{opacity:.45}
+}
+</style>
+
+<style id="REAL_EXAM_LAST2_TIMER_STYLE">
+#timer.real-exam-last2{color:#ff0000!important;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:none!important;animation:realExamLast2Blink 0.8s steps(1,end) infinite!important}
+@keyframes realExamLast2Blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
+</style>
+</head>
+<body>
+<div id="viewScreen" class="hidden" style="position:fixed;inset:0;z-index:200;background:var(--bg);"></div>
+<canvas id="fx"></canvas>
+
+<header class="topbar">
+  <div class="leftbox"><div class="topButtons"><button id="themeBtn" class="themeBtn" type="button">☀ THEME</button><button id="viewBtn" class="themeBtn viewBtn" type="button">VIEW QUESTIONS</button></div></div>
+  <div class="centerbox">
+    <button id="correctBtn" class="correctBtn" type="button">CORRECT: 0</button>
+    <div id="timer" class="timer">30:00</div>
+  </div>
+  <div class="rightbox"><button id="adminBtn" class="adminBtn" type="button">ADMIN PORTAL</button></div>
+</header>
+
+<section id="start" class="screen">
+  <div class="startCard">
+    <h1 class="brand">MOCK TEST</h1>
+    <label for="candidate">Candidate Name</label>
+    <input id="candidate" class="name" autocomplete="name" spellcheck="false">
+    <button id="startBtn" class="startBtn" type="button">EXAM START</button>
+  </div>
+</section>
+
+<section id="exam" class="exam hidden">
+  <div class="examInner">
+    <div class="progress"><div class="progressTop"><span id="progress"></span><span id="sectionLabel"></span></div><div class="progressTrack"><div id="progressFill" class="progressFill"></div></div></div>
+    <div id="passageBox" class="passageBox"></div>
+    <div id="revisionBanner"><span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span></div><div id="qcard" class="qcard"></div>
+  </div>
+</section>
+
+<section id="result" class="result hidden"></section>
+
+<section id="admin" class="admin hidden">
+  <div class="adminCard">
+    <div class="adminHead">
+      <div><h2 class="adminTitle">CENTRAL SCOREBOARD ADMIN PORTAL</h2></div>
+      <div class="adminTools">
+        <button id="refreshAdmin">REFRESH RESULTS</button>
+        <button id="csvAdmin">DOWNLOAD RESULTS CSV</button>
+        <button id="printAdmin">PRINT / SAVE PDF REPORT</button>
+        <button id="clearAdmin" class="danger">CLEAR ALL RESULTS</button>
+      </div>
+    </div>
+    <div id="adminTable"></div>
+  </div>
+</section>
+
+<script>
+const TEST_TITLE="PASSAGE-4 — JOHN SNOW & CHOLERA | QUESTIONS 61–69";
+const PASSAGE_LABEL="PASSAGE-4 — JOHN SNOW & CHOLERA";
+const PASSAGE_INTRO="Read the following passage and answer questions 61–68:";
+const PASSAGE_TEXT=`In 1854, during a cholera outbreak in London, the physician John Snow plotted the addresses of the dead on a map and noticed that deaths clustered around a water pump on Broad Street. Although the prevailing 'miasma' theory held that disease spread through foul air, Snow's spatial evidence pointed to contaminated water. Local authorities, sceptical but desperate, removed the pump handle, and new cases subsided — though historians note that the outbreak may already have been waning. Snow's real contribution, therefore, lay not in the dramatic removal of the handle but in demonstrating that systematic data, rather than received wisdom, could expose the cause of an epidemic. Germ theory would not be widely accepted for another decade.`;
+
+const QUESTIONS=[
+  {orig:61,id:61,source:"passage",text:"Which of the following best expresses the central idea of the passage?",options:["Foul air was conclusively proven to be the cause of cholera.","Snow's lasting significance lies in his data-driven method, which challenged prevailing beliefs, rather than in the removal of the pump handle.","Local authorities were the first to accept germ theory.","Removing the pump handle single-handedly ended the cholera epidemic."],answer:"B",explanation:"The passage emphasizes that Snow’s lasting contribution was his systematic, data-driven evidence challenging prevailing beliefs, not simply the removal of the pump handle.",kind:"PASSAGE-4"},
+  {orig:62,id:62,source:"passage",text:"According to the passage, the 'miasma' theory held that disease was spread through —",options:["contaminated water","insect bites","foul air","physical contact"],answer:"C",explanation:"The passage states that the prevailing 'miasma' theory held that disease spread through foul air.",kind:"PASSAGE-4"},
+  {orig:63,id:63,source:"passage",text:"Which inference is best supported by the passage?",options:["The epidemic ended only because germ theory was accepted.","The fall in new cases cannot be attributed with certainty to the removal of the pump handle.","Snow's map was proved wrong by later historians.","The pump handle was never removed."],answer:"B",explanation:"The passage notes that new cases subsided after the handle was removed, but historians point out that the outbreak may already have been waning; therefore the decline cannot be attributed with certainty to the handle's removal.",kind:"PASSAGE-4"},
+  {orig:64,id:64,source:"passage",text:"The word 'sceptical' in the passage is closest in meaning to —",options:["indifferent","doubtful","grateful","enthusiastic"],answer:"B",explanation:"'Sceptical' means doubtful or unconvinced.",kind:"PASSAGE-4"},
+  {orig:65,id:65,source:"passage",text:"The phrase 'received wisdom' most nearly means —",options:["knowledge obtained from foreign experts","advice given by physicians to patients","recently discovered scientific facts","ideas accepted traditionally without being questioned"],answer:"D",explanation:"'Received wisdom' refers to ideas or beliefs traditionally accepted as true without being questioned.",kind:"PASSAGE-4"},
+  {orig:66,id:66,source:"passage",text:"The author's tone in the passage can best be described as —",options:["analytical and measured","sentimental and nostalgic","alarmist and urgent","sarcastic and dismissive"],answer:"A",explanation:"The author presents the historical evidence carefully and objectively, giving an analytical and measured account rather than an emotional or dismissive one.",kind:"PASSAGE-4"},
+  {orig:67,id:67,source:"passage",text:"Which statement is NOT supported by the passage?",options:["The outbreak may have been declining before the handle was removed.","Germ theory was already widely accepted in 1854.","Snow plotted the addresses of the dead on a map.","Deaths clustered around a pump on Broad Street."],answer:"B",explanation:"The passage explicitly states that germ theory would not be widely accepted for another decade, so it was not already widely accepted in 1854.",kind:"PASSAGE-4"},
+  {orig:68,id:68,source:"passage",text:"The word 'therefore' in 'Snow's real contribution, therefore, lay not in...' signals —",options:["a contrast with the previous sentence","an example of the miasma theory","a definition of epidemic","a conclusion drawn from the preceding qualification"],answer:"D",explanation:"'Therefore' introduces a conclusion drawn from the preceding qualification that the outbreak may already have been waning.",kind:"PASSAGE-4"},
+  {orig:69,id:69,source:"passage",text:"Choose the correct option: 'Neither the manager nor his assistants ______ present at the meeting.'",options:["is","has been","was","were"],answer:"D",explanation:"With 'neither...nor', the verb agrees with the nearer subject. The nearer subject is the plural noun 'assistants', so 'were' is correct.",kind:"PASSAGE-4"}
+];
+
+let DURATION=15*60;
+const DEFAULT_DURATION_SECONDS=15*60;
+const ADMIN_PASSWORD="Bikash@420";
+const RESULTS_KEY="passage4_john_snow_cholera_61_69_v1";
+const CENTRAL_SCOREBOARD_URL="https://script.google.com/macros/s/AKfycby_4CKFXC9kKnNZbUE_BWLQBPQlH44kOzR1CpNhfHKNL5AO2Kj5JAeVyRymPeFldVM/exec";
+const CENTRAL_API_TOKEN="CTET_SCOREBOARD_2026_BIKAS_420";
+const CENTRAL_ADMIN_CACHE_KEY="geo_central_scoreboard_admin_cache_v1";
+
+let candidate="",idx=0,answers={},startAt=0,examStartAt=null,timerHandle=null,submitted=false,warningGiven=false;
+let revisionMode=false,revisionQuestions=[],revisionAnswers={},revisionStartAt=0,revisionTimerHandle=null,revisionSubmitted=false,mainResult=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const letter=i=>String.fromCharCode(65+i);
+const answerIndex=L=>L.charCodeAt(0)-65;
+
+function getResults(){try{return JSON.parse(localStorage.getItem(RESULTS_KEY)||"[]")}catch(e){return[]}}
+function saveResults(a){localStorage.setItem(RESULTS_KEY,JSON.stringify(a))}
+
+
+function submitToCentralScoreboard(r){
+  const status=$("centralStatus");
+  const payload={
+    action:"submit",
+    token:CENTRAL_API_TOKEN,
+    candidateName:String(r.candidate||"").trim(),
+    score:Number(r.score)||0,
+    percentage:Number(r.percentage)||0,
+    timeUsedSeconds:Number(r.timeUsed)||0,
+    examStart:r.startExam||examStartAt||"",
+    examEnd:r.completedAt||new Date().toISOString()
+  };
+  const body=JSON.stringify(payload);
+
+  if(status){
+    status.textContent="CENTRAL SCOREBOARD: SUBMITTING RESULT…";
+    status.style.color="var(--green)";
+  }
+
+  // Send the result in the background. The exam result screen must never wait for
+  // the Central Scoreboard server, because Apps Script/Google Sheets can take a few
+  // seconds to complete the write.
+  let sent=false;
+  try{
+    fetch(CENTRAL_SCOREBOARD_URL,{
+    method:"POST",
+    mode:"no-cors",
+    redirect:"follow",
+    credentials:"omit",
+    headers:{"Content-Type":"text/plain;charset=UTF-8"},
+    body:body,
+    keepalive:true
+    }).then(()=>{
+      sent=true;
+      if(status){
+        status.textContent="CENTRAL SCOREBOARD: RESULT SUBMITTED";
+        status.style.color="var(--green)";
+      }
+    }).catch(()=>{
+      // Fallback for browsers that block the POST request.
+      try{
+        if(navigator.sendBeacon){
+          const queued=navigator.sendBeacon(
+            CENTRAL_SCOREBOARD_URL,
+            new Blob([body],{type:"text/plain;charset=UTF-8"})
+          );
+          if(queued) sent=true;
+        }
+      }catch(e){}
+      if(!sent && status){
+        status.textContent="CENTRAL SCOREBOARD: CONNECTION FAILED";
+        status.style.color="var(--red)";
+      }
+    });
+  }catch(e){
+    try{
+      if(navigator.sendBeacon){
+        sent=navigator.sendBeacon(
+          CENTRAL_SCOREBOARD_URL,
+          new Blob([body],{type:"text/plain;charset=UTF-8"})
+        );
+      }
+    }catch(err){}
+  }
+  return Promise.resolve(sent);
+}
+
+let audioCtx=null;
+function ensureAudio(){try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return null;if(!audioCtx)audioCtx=new C();if(audioCtx.state==="suspended")audioCtx.resume();return audioCtx}catch(e){return null}}
+
+function beep(correct){
+  const c=ensureAudio();if(!c)return;
+  const now=c.currentTime;
+  const tones=correct?[523.25,659.25,783.99,1046.5,1318.51]:[220,174.61,146.83,110,82.41];
+  const type=correct?"sine":"square";
+  tones.forEach((f,i)=>{
+    const o=c.createOscillator(),g=c.createGain();
+    const t=now+i*(correct?.07:.075);
+    o.type=type;o.frequency.setValueAtTime(f,t);
+    g.gain.setValueAtTime(.0001,t);
+    g.gain.exponentialRampToValueAtTime(1.0,t+.012);
+    g.gain.exponentialRampToValueAtTime(.0001,t+(correct?.25:.30));
+    o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+(correct?.27:.32));
+  });
+}
+
+function fireworks(good){
+  const canvas=$("fx"),ctx=canvas.getContext("2d");
+  const dpr=Math.min(devicePixelRatio||1,2);
+  canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const cx=innerWidth/2,cy=innerHeight*.48;
+  const particles=[];
+  const count=190;
+  for(let i=0;i<count;i++){
+    const a=Math.PI*2*i/count+(Math.random()-.5)*.045;
+    const ring=i%3;
+    const speed=(ring===0?3.4:ring===1?4.8:6.0)+Math.random()*1.8;
+    particles.push({
+      x:cx,y:cy,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,
+      life:55+Math.random()*30,size:1.4+Math.random()*2.4,
+      delay:Math.random()*5
+    });
+  }
+  let frame=0;
+  function draw(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    particles.forEach(p=>{
+      if(frame<p.delay)return;
+      p.x+=p.vx;p.y+=p.vy;p.vy+=.055;p.vx*=.994;p.vy*=.994;p.life--;
+      if(p.life>0){
+        ctx.globalAlpha=Math.min(1,p.life/22);
+        ctx.fillStyle=good?"#18e76b":"#ff3152";
+        ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();
+      }
+    });
+    ctx.globalAlpha=1;
+    if(frame++<92)requestAnimationFrame(draw);else ctx.clearRect(0,0,innerWidth,innerHeight);
+  }
+  draw();
+}
+
+function formatTime(sec){
+  sec=Math.max(0,Math.floor(Number(sec)||0));
+  if(sec>=3600){
+    const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),ss=sec%60;
+    return h+":"+String(m).padStart(2,"0")+":"+String(ss).padStart(2,"0");
+  }
+  return String(Math.floor(sec/60)).padStart(2,"0")+":"+String(sec%60).padStart(2,"0");
+}
+
+function parseCentralDateTime(value, baseDate){
+  if(value===null || value===undefined || value==="") return NaN;
+  const v=String(value).trim();
+  if(!v) return NaN;
+
+  // ISO / normal browser date strings.
+  let t=Date.parse(v);
+  if(Number.isFinite(t)) return t;
+
+  // Common Central Sheet formats: DD/MM/YYYY HH:mm:ss, DD/MM/YYYY hh:mm AM/PM,
+  // and similar comma-separated variants.
+  let m=v.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ ,T]+(\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?)?$/i);
+  if(m){
+    let day=Number(m[1]), mon=Number(m[2])-1, year=Number(m[3]);
+    if(year<100) year+=2000;
+    let hh=Number(m[4]||0), mm=Number(m[5]||0), ss=Number(m[6]||0);
+    const ap=(m[7]||"").toUpperCase();
+    if(ap){ if(hh===12) hh=0; if(ap==="PM") hh+=12; }
+    const d=new Date(year,mon,day,hh,mm,ss,0);
+    return Number.isFinite(d.getTime())?d.getTime():NaN;
+  }
+
+  // Time-only value such as 02:40 PM. Combine it with the supplied base date.
+  m=v.match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?$/i);
+  if(m && baseDate){
+    const b=new Date(baseDate);
+    if(Number.isFinite(b.getTime())){
+      let hh=Number(m[1]), mm=Number(m[2]), ss=Number(m[3]||0);
+      const ap=(m[4]||"").toUpperCase();
+      if(ap){ if(hh===12) hh=0; if(ap==="PM") hh+=12; }
+      b.setHours(hh,mm,ss,0);
+      return b.getTime();
+    }
+  }
+  return NaN;
+}
+
+function formatCentralTimeUsed(raw,startExam,completedAt,resultDuration){
+  const maxDuration=(Number(resultDuration)>0?Number(resultDuration):DURATION);
+
+  // Best source: actual start/submission timestamps.
+  let endMs=parseCentralDateTime(completedAt);
+  let startMs=parseCentralDateTime(startExam, endMs);
+  if(Number.isFinite(startMs) && Number.isFinite(endMs)){
+    // If only clock times were supplied and the exam crossed midnight, account for it.
+    if(endMs<startMs && (startMs-endMs)<24*3600*1000) endMs+=24*3600*1000;
+    const elapsed=Math.floor((endMs-startMs)/1000);
+    if(elapsed>=0 && elapsed<=maxDuration) return formatTime(elapsed);
+  }
+
+  if(raw===null||raw===undefined||raw==="")return "—";
+
+  // New records normally arrive as seconds.
+  if(typeof raw==="number" && isFinite(raw)){
+    return raw>=0 && raw<=maxDuration ? formatTime(raw) : "—";
+  }
+
+  const v=String(raw).trim();
+  if(!v)return "—";
+
+  // Plain MM:SS or HH:MM:SS duration.
+  const parts=v.split(":").map(Number);
+  if(parts.length===2 && parts.every(Number.isFinite)){
+    const total=parts[0]*60+parts[1];
+    return total<=maxDuration && total>=0 ? formatTime(total) : "—";
+  }
+  if(parts.length===3 && parts.every(Number.isFinite)){
+    const total=parts[0]*3600+parts[1]*60+parts[2];
+    return total<=maxDuration && total>=0 ? formatTime(total) : "—";
+  }
+
+  // Some older Google Sheet date-formatted duration cells come back as an ISO
+  // date around 1899/1900. Treat only the clock portion as a duration, and only
+  // when it is within the configured exam duration.
+  const iso=v.match(/^(1899|1900)-\d{2}-\d{2}T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(?:Z)?$/i);
+  if(iso){
+    const total=Number(iso[2])*3600+Number(iso[3])*60+Number(iso[4]);
+    return total>=0 && total<=maxDuration ? formatTime(total) : "—";
+  }
+
+  return "—";
+}
+function sectionFor(q){ return "PASSAGE-4"; }
+
+function currentQuestionList(){ return revisionMode ? revisionQuestions : QUESTIONS; }
+function currentAnswerStore(){ return revisionMode ? revisionAnswers : answers; }
+function currentSubmitted(){ return revisionMode ? revisionSubmitted : submitted; }
+
+function render(){
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const correctCount=Object.keys(store).filter(k=>{
+    const q=list.find(x=>x.id===Number(k));
+    return q && store[q.id]===q.answer;
+  }).length;
+
+  $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
+  const pf=$("progressFill");
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("sectionLabel").textContent=revisionMode ? "REVISION TEST · WRONG QUESTIONS" : "PASSAGE-4 · JOHN SNOW & CHOLERA";
+
+  const sourceBlocks=[];
+  const qs=list.filter(q=>q.source==="passage");
+  const head=`<div class="passageBox"><div class="passageHead">${esc(PASSAGE_LABEL)}</div><div class="passageIntro">${esc(PASSAGE_INTRO)}</div><div class="passageText">${esc(PASSAGE_TEXT).replace(/\n\n/g,"<br><br>").replace(/\n/g,"<br>")}</div></div>`;
+  const blocks=qs.map(q=>{
+      const a=store[q.id]||"";
+      return `<div class="allQuestion" id="question-${q.id}">
+        <div class="qnum">Q${q.id} · ${q.kind.toUpperCase()}</div>
+        <div class="question">${q.htmlText||esc(q.text)}</div>
+        <div class="options">${q.options.map((o,i)=>{
+          const L=letter(i);
+          let cls="opt";
+          if(a){
+            if(L===q.answer) cls+=" correct";
+            if(L===a && a!==q.answer) cls+=" wrong";
+            if(L===a) cls+=" selected answer-locked";
+          }
+          return `<button type="button" class="${cls}" data-q="${q.id}" data-opt="${L}" ${a?"disabled":""}>
+            <span class="letter">${letter(i)}.</span><span>${esc(o)}</span></button>`;
+        }).join("")}</div>
+      </div>`;
+    }).join("");
+  sourceBlocks.push(head+blocks);
+
+  $("passageBox").innerHTML="";
+  $("passageBox").classList.add("hidden");
+  $("qcard").innerHTML=`
+    <div class="questionScroll">
+      ${sourceBlocks.join("")}
+      <div class="finalSubmitArea">
+        <button id="finalSubmitBtn" class="next finalSubmitBtn" type="button" disabled>${revisionMode?"REVISION SUBMIT":"FINAL SUBMIT"}</button>
+      </div>
+    </div>`;
+
+  $("qcard").querySelectorAll("[data-opt]").forEach(el=>{
+    el.onclick=()=>choose(Number(el.dataset.q),el.dataset.opt);
+  });
+
+  updateFinalSubmitState();
+
+  $("finalSubmitBtn").onclick=()=>{
+    const answered=Object.keys(currentAnswerStore()).filter(k=>list.some(q=>q.id===Number(k))).length;
+    if(answered !== list.length){
+      updateFinalSubmitState();
+      const firstUnanswered=list.find(q=>!currentAnswerStore()[q.id]);
+      if(firstUnanswered){
+        const target=document.getElementById(`question-${firstUnanswered.id}`);
+        if(target)target.scrollIntoView({behavior:"smooth",block:"center"});
+      }
+      return;
+    }
+    try{if(navigator.vibrate)navigator.vibrate([120,40,180]);}catch(e){}
+    if(revisionMode) finishRevision();
+    else submitExam();
+  };
+
+  $("correctBtn").textContent=`CORRECT: ${correctCount}/${list.length}`;
+}
+
+function countCorrectLive(){
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  let n=0;
+  list.forEach(q=>{if(store[q.id]===q.answer)n++});
+  return n;
+}
+
+function choose(qid,L){
+  if(currentSubmitted())return;
+
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  if(store[qid])return;
+
+  const q=list.find(x=>x.id===qid);
+  if(!q)return;
+  store[qid]=L;
+  const ok=L===q.answer;
+
+  beep(ok);
+  fireworks(ok);
+
+  const btns=document.querySelectorAll(`[data-q="${qid}"]`);
+  btns.forEach(b=>{
+    const opt=b.dataset.opt;
+    b.disabled=true;
+    b.classList.remove("selected","correct","wrong","answer-locked");
+    if(opt===q.answer) b.classList.add("correct");
+    if(opt===L && L!==q.answer) b.classList.add("wrong");
+    if(opt===L) b.classList.add("selected");
+    b.classList.add("answer-locked");
+  });
+
+  const answeredCount=Object.keys(store).filter(k=>list.some(x=>x.id===Number(k))).length;
+  $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
+  const pf=$("progressFill");
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("correctBtn").textContent=`CORRECT: ${countCorrectLive()}/${list.length}`;
+  updateFinalSubmitState();
+}
+
+function updateFinalSubmitState(){
+  const btn=$("finalSubmitBtn");
+  if(!btn)return;
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const complete=answeredCount===list.length;
+  btn.disabled=!complete;
+  btn.title=complete?"সব প্রশ্নের উত্তর দেওয়া হয়েছে":"সব প্রশ্নের উত্তর না দেওয়া পর্যন্ত Submit করা যাবে না";
+}
+
+function startViewQuestions(){
+  const view=document.getElementById("viewScreen");
+  if(!view)return;
+  const list=QUESTIONS;
+  const passageQs=list.filter(q=>q.source==="passage");
+  const section=(label,intro,text,qs)=>`
+    <div class="viewQuestion">
+      <div class="qnum">${esc(label)}</div>
+      <div class="question">${esc(intro)}</div>
+      <div class="passageText">${esc(text).replace(/\n\n/g,"<br><br>").replace(/\n/g,"<br>")}</div>
+    </div>
+    ${qs.map(q=>`<div class="viewQuestion">
+      <div class="qnum">Q${q.id} · ${q.kind.toUpperCase()}</div>
+      <div class="question">${esc(q.text)}</div>
+      <div class="options">${q.options.map((o,i)=>`<button type="button" class="opt viewOnlyOpt" disabled><span class="letter">${letter(i)}.</span><span>${esc(o)}</span></button>`).join("")}</div>
+    </div>`).join("")}`;
+  view.innerHTML=`
+    <div class="viewModeWrap">
+      <div class="viewModeInner">
+        <div class="viewModeHeader"><strong>VIEW QUESTIONS · ${list.length} QUESTIONS</strong><span>Scroll up/down to read</span></div>
+        ${section(PASSAGE_LABEL,PASSAGE_INTRO,PASSAGE_TEXT,passageQs)}
+        <button id="closeViewQuestions" class="viewModeExit" type="button">BACK TO START</button>
+      </div>
+    </div>`;
+  view.classList.remove("hidden");
+  document.getElementById("closeViewQuestions").onclick=closeViewQuestions;
+}
+
+function closeViewQuestions(){
+  const view=document.getElementById("viewScreen");
+  if(view)view.classList.add("hidden");
+}
+
+function startExam(){
+  const n=$("candidate").value.trim();
+  if(!n){$("candidate").focus();return}
+
+  const startBtn=$("startBtn");
+  if(startBtn)startBtn.disabled=true;
+  ensureAudio();
+  candidate=n;idx=0;answers={};submitted=false;warningGiven=false;
+  revisionMode=false;revisionQuestions=[];revisionAnswers={};revisionSubmitted=false;mainResult=null;
+  startAt=Date.now();
+  examStartAt=new Date(startAt).toISOString();
+  $("start").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("admin").classList.add("hidden");
+  $("revisionBanner").classList.remove("show");
+  $("exam").classList.remove("hidden");
+  $("timer").classList.remove("warn","real-exam-last2","timerHidden");
+  $("timer").textContent=formatTime(DURATION);
+  render();
+  clearInterval(timerHandle);
+  timerHandle=setInterval(tick,250);
+  tick();
+  if(startBtn)startBtn.disabled=false;
+}
+
+function tick(){
+  if(revisionMode)return;
+  const used=Math.floor((Date.now()-startAt)/1000),left=DURATION-used;
+  $("timer").textContent=formatTime(Math.max(0,left));
+
+  // Requested: warning + blinking only during the LAST TWO MINUTES.
+  const lastTwo=left<=120 && left>0;
+  $("timer").classList.toggle("warn",lastTwo);
+  $("timer").classList.toggle("real-exam-last2",lastTwo);
+
+  if(lastTwo && !warningGiven){
+    warningGiven=true;
+    try{
+      const c=ensureAudio();
+      if(c){
+        const playWarningTone=(delay)=>{
+          setTimeout(()=>{
+            try{
+              const o=c.createOscillator(),g=c.createGain();
+              o.type="square";
+              o.frequency.setValueAtTime(880,c.currentTime);
+              o.frequency.exponentialRampToValueAtTime(660,c.currentTime+0.22);
+              g.gain.setValueAtTime(0.0001,c.currentTime);
+              g.gain.exponentialRampToValueAtTime(0.28,c.currentTime+0.015);
+              g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+0.28);
+              o.connect(g);g.connect(c.destination);
+              o.start();o.stop(c.currentTime+0.3);
+            }catch(e){}
+          },delay);
+        };
+        playWarningTone(0);playWarningTone(360);playWarningTone(720);
+      }
+    }catch(e){}
+    setTimeout(()=>{if(!submitted && !revisionMode) alert("⚠️ সতর্কবার্তা: পরীক্ষার শেষ ২ মিনিট শুরু হয়েছে।");},50);
+  }
+
+  if(left<=0 && !submitted)submitExam();
+}
+
+function submitExam(){
+  if(submitted)return;
+  submitted=true;
+  clearInterval(timerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+  const used=Math.min(DURATION,Math.floor((Date.now()-startAt)/1000));
+  let correct=0,attempted=0;
+  QUESTIONS.forEach(q=>{
+    if(answers[q.id]){
+      attempted++;
+      if(answers[q.id]===q.answer)correct++;
+    }
+  });
+  const incorrect=attempted-correct,unanswered=QUESTIONS.length-attempted;
+  const result={
+    id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random()),
+    candidate,score:correct,percentage:correct/QUESTIONS.length*100,correct,incorrect,attempted,unanswered,
+    timeUsed:used,durationSeconds:DURATION,startExam:examStartAt||new Date().toISOString(),completedAt:new Date().toISOString(),answers:{...answers}
+  };
+  const arr=getResults();arr.push(result);saveResults(arr);
+  mainResult=result;
+  submitToCentralScoreboard(result);
+  showResult(mainResult);
+}
+
+function showResult(r,allowRevision=true){
+  clearInterval(timerHandle);
+  clearInterval(revisionTimerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+
+  const wrongCount=QUESTIONS.filter(q=>r.answers[q.id] && r.answers[q.id]!==q.answer).length;
+
+  // After FINAL SUBMIT, automatically open the wrong questions for revision.
+  // No button is required. The blinking heading appears above the questions.
+  if(wrongCount && allowRevision){
+    mainResult=r;
+    startRevision(r.answers);
+    return;
+  }
+
+  // If there are no wrong answers, show the normal final result.
+  $("revisionBanner").classList.remove("show");
+  $("exam").classList.add("hidden");
+  $("result").classList.remove("hidden");
+  const rows=QUESTIONS.map(q=>{
+    const a=r.answers[q.id]||"",ok=a===q.answer;
+    const your=a?`${a}. ${q.options[answerIndex(a)]}`:"Unanswered";
+    const correct=`${q.answer}. ${q.options[answerIndex(q.answer)]}`;
+    return `<div class="reviewRow"><div class="reviewQ">Q${q.id}. <span style="color:var(--gold)">${esc(sectionFor(q))}</span> — ${esc(q.text)}</div>
+      <div class="reviewA">Candidate's Answer: <b>${esc(your)}</b> · Correct Answer: <b>${esc(correct)}</b>
+      <span class="tag ${!a?"skip":ok?"ok":"bad"}">${!a?"UNANSWERED":ok?"CORRECT":"WRONG"}</span>
+       <div style="margin-top:8px"><div class="explain"><b>ব্যাখ্যা:</b> ${esc(q.explanation)}</div></div></div></div>`;
+  }).join("");
+
+  $("result").innerHTML=`<div class="resultCard">
+    <h1 class="resultTitle">MOCK TEST RESULT</h1>
+    <div class="candidate">${esc(r.candidate)}</div>
+    <div class="stats">
+      <div class="stat"><small>Total Questions</small><strong>${QUESTIONS.length}</strong></div>
+      <div class="stat"><small>Attempted</small><strong>${r.attempted}</strong></div>
+      <div class="stat"><small>Correct</small><strong>${r.correct}</strong></div>
+      <div class="stat"><small>Incorrect</small><strong>${r.incorrect}</strong></div>
+      <div class="stat"><small>Unanswered</small><strong>${r.unanswered}</strong></div>
+      <div class="stat"><small>Score</small><strong>${r.score}</strong></div>
+      <div class="stat"><small>Percentage</small><strong>${r.percentage.toFixed(2)}%</strong></div>
+      <div class="stat"><small>Time Used</small><strong>${formatTime(r.timeUsed)}</strong></div>
+    </div>
+    <div class="resultActions">
+      <button onclick="window.print()">PRINT / SAVE PDF</button>
+      <button onclick="location.reload()">BACK TO START</button>
+    </div>
+    <div class="review"><h3>ANSWER REVIEW</h3>${rows}</div>
+  </div>`;
+}
+
+function startRevision(originalAnswers){
+  revisionQuestions=QUESTIONS.filter(q=>originalAnswers[q.id] && originalAnswers[q.id]!==q.answer);
+  if(!revisionQuestions.length){
+    revisionMode=false;
+    clearInterval(revisionTimerHandle);
+    showResult(mainResult);
+    return;
+  }
+
+  revisionMode=true;
+  revisionAnswers={};
+  revisionSubmitted=false;
+  idx=0;
+  revisionStartAt=Date.now();
+
+  $("result").classList.add("hidden");
+  $("admin").classList.add("hidden");
+  $("start").classList.add("hidden");
+  $("exam").classList.remove("hidden");
+  $("revisionBanner").innerHTML='<span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span>';
+  $("revisionBanner").classList.add("show");
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
+  $("correctBtn").textContent=`CORRECT: 0/${revisionQuestions.length}`;
+  render();
+
+  clearInterval(revisionTimerHandle);
+  revisionTimerHandle=null;
+}
+
+function tickRevision(){
+  // Revision Test is untimed. Keep the main timer completely hidden.
+  if(!revisionMode||revisionSubmitted)return;
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+}
+
+function finishRevision(){
+  if(revisionSubmitted)return;
+  revisionSubmitted=true;
+  clearInterval(revisionTimerHandle);
+  clearInterval(timerHandle);
+  revisionMode=false;
+  $("revisionBanner").classList.remove("show");
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+  // Revision is practice only; the original exam result remains unchanged.
+  if(mainResult)showResult(mainResult,false);
+}
+
+let adminPasswordSession="";
+
+function adminLogin(){
+  const p=prompt("Admin Password");
+  if(p!==ADMIN_PASSWORD){
+    alert("Incorrect password.");
+    return;
+  }
+  adminPasswordSession=p;
+  $("start").classList.add("hidden");
+  $("exam").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("admin").classList.remove("hidden");
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
+  $("correctBtn").textContent="CORRECT: 0";
+  renderCentralAdmin();
+}
+
+function fetchCentralJson(url, attempts=3){
+  return new Promise((resolve,reject)=>{
+    let lastError=null;
+    const tryOnce=(n)=>{
+      fetch(url,{
+        method:"GET",
+        mode:"cors",
+        credentials:"omit",
+        cache:"no-store",
+        redirect:"follow"
+      }).then(async r=>{
+        const text=await r.text();
+        const clean=text.trim();
+        if(!r.ok) throw new Error("HTTP "+r.status);
+        if(!clean || clean[0]==="<" || /^<!doctype/i.test(clean)){
+          throw new Error("Central server returned HTML instead of JSON.");
+        }
+        try{
+          resolve(JSON.parse(clean));
+        }catch(e){
+          throw new Error("Central server returned invalid JSON.");
+        }
+      }).catch(err=>{
+        lastError=err;
+        if(n<attempts){
+          setTimeout(()=>tryOnce(n+1),1200*n);
+        }else{
+          reject(lastError||new Error("Connection failed."));
+        }
+      });
+    };
+    tryOnce(1);
+  });
+}
+
+function saveCentralAdminCache(data){
+  try{
+    localStorage.setItem(
+      CENTRAL_ADMIN_CACHE_KEY,
+      JSON.stringify({savedAt:Date.now(),data:data})
+    );
+  }catch(e){}
+}
+
+function getCentralAdminCache(){
+  try{
+    const x=JSON.parse(localStorage.getItem(CENTRAL_ADMIN_CACHE_KEY)||"null");
+    return x&&Array.isArray(x.data)?x:null;
+  }catch(e){return null}
+}
+
+function renderCentralAdmin(){
+  const wrap=$("adminTable");
+  wrap.innerHTML='<div class="empty">Loading CENTRAL SCOREBOARD…</div>';
+
+  fetchCentralJson(CENTRAL_SCOREBOARD_URL+"?action=results&_="+Date.now(),5)
+    .then(data=>{
+      if(!data.ok)throw new Error(data.error||"Unable to load results.");
+      const results=Array.isArray(data.results)?data.results:[];
+      saveCentralAdminCache(results);
+      renderCentralAdminShell(results);
+    })
+    .catch(err=>{
+      const cached=getCentralAdminCache();
+      if(cached){
+        renderCentralAdminShell(cached.data);
+        wrap.insertAdjacentHTML(
+          "afterbegin",
+          '<div class="empty" style="padding:8px 0;color:var(--gold)">CENTRAL SERVER TEMPORARILY UNAVAILABLE — showing the last successfully loaded results. Tap REFRESH RESULTS to try again.</div>'
+        );
+      }else{
+        wrap.innerHTML='<div class="empty">CENTRAL SCOREBOARD TEMPORARILY UNAVAILABLE: '+esc(err.message||"Connection failed.")+'<br><br>Tap REFRESH RESULTS to try again.</div>';
+      }
+    });
+}
+
+function renderCentralAdminShell(results){
+  const wrap=$("adminTable");
+
+  wrap.innerHTML=`
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px">
+      <div style="font-weight:1000">CENTRAL SCOREBOARD</div>
+      <button id="centralRefreshBtn" style="border:1px solid #444;border-radius:11px;padding:10px 13px;background:#111;color:#fff;font-weight:900">REFRESH RESULTS</button>
+    </div>
+    <div id="centralTestInfo" style="margin:6px 0 12px;color:var(--muted);font-weight:800">
+      All HTML exam results are stored in this single scoreboard.
+    </div>
+    <div id="centralResultsArea"></div>
+  `;
+
+  $("centralRefreshBtn").onclick=renderCentralAdmin;
+  renderCentralResults(results||[]);
+}
+
+function renderCentralResults(results){
+  const area=$("centralResultsArea");
+  if(!area)return;
+
+  if(!results.length){
+    area.innerHTML='<div class="empty">No results found.</div>';
+    return;
+  }
+
+  area.innerHTML=`
+    <div class="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Date</th>
+            <th>Candidate Name</th>
+            <th>Score</th>
+            <th>Exam Start</th>
+            <th>Exam End</th>
+            <th>Time Used</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${results.map((r,i)=>{
+            const score=(r.scored==null ? (r.score==null ? "" : r.score) : r.scored);
+            const pct=(r.percentage==null ? "" : r.percentage);
+            const time=formatCentralTimeUsed(r.timeUsed,r.examStart,r.examEnd,r.durationSeconds||DURATION);
+            const rank=(r.rank==null || r.rank==="") ? (i+1) : r.rank;
+            return `
+            <tr>
+              <td>${esc(rank)}</td>
+              <td>${esc(r.date||"")}</td>
+              <td>${esc(r.candidateName||r.candidate||"")}</td>
+              <td>${esc(score)}</td>
+              <td>${esc(r.examStart||"")}</td>
+              <td>${esc(r.examEnd||"")}</td>
+              <td>${esc(time)}</td>
+              <td>${esc(pct)}</td>
+            </tr>`;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function downloadCSV(){
+  const rows=document.querySelectorAll("#centralResultsArea table tbody tr");
+  if(!rows.length){alert("No Central results to download.");return}
+
+  const lines=[
+    ["Rank","Date","Candidate Name","Score","Exam Start","Exam End","Time Used","Percentage"]
+  ];
+
+  rows.forEach(tr=>{
+    lines.push(Array.from(tr.cells).map(td=>td.textContent.trim()));
+  });
+
+  const txt="\uFEFF"+lines.map(row=>
+    row.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")
+  ).join("\r\n");
+
+  const blob=new Blob([txt],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="Central_Scoreboard_Results.csv";
+  a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+function updateSharePreview(){
+  document.title=TEST_TITLE;
+  const set=(selector,content)=>{
+    const el=document.querySelector(selector);
+    if(el)el.setAttribute("content",content);
+  };
+  set('meta[name="description"]',TEST_TITLE+" — Passage Comprehension Test");
+  set('meta[property="og:title"]',TEST_TITLE);
+  set('meta[property="og:description"]',"Read the following passage and answer questions 61–68:");
+  set('meta[name="twitter:title"]',TEST_TITLE);
+  set('meta[name="twitter:description"]',"Read the following passage and answer questions 61–68:");
+  set('meta[name="application-name"]',TEST_TITLE);
+}
+
+function toggleTheme(){
+  document.body.classList.toggle("light");
+  localStorage.setItem("ctet_mock_theme",document.body.classList.contains("light")?"light":"dark");
+  $("themeBtn").textContent=document.body.classList.contains("light")?"☾ DARK":"☀ THEME";
+}
+function loadTheme(){
+  const light=localStorage.getItem("ctet_mock_theme")==="light";
+  document.body.classList.toggle("light",light);$("themeBtn").textContent=light?"☾ DARK":"☀ THEME";
+}
+
+$("startBtn").onclick=startExam;
+$("candidate").addEventListener("keydown",e=>{if(e.key==="Enter")startExam()});
+$("themeBtn").onclick=toggleTheme;
+$("viewBtn").onclick=startViewQuestions;
+$("adminBtn").onclick=adminLogin;
+$("refreshAdmin").onclick=renderCentralAdmin;
+$("csvAdmin").onclick=downloadCSV;
+$("printAdmin").onclick=()=>window.print();
+$("clearAdmin").onclick=()=>{
+  alert("Central Scoreboard data is stored in Google Sheet. To preserve all previous results, this portal does not delete them.");
+};
+loadTheme();
+updateSharePreview();
+</script>
+<script id="REAL_EXAM_LAST2_TIMER_ONLY_SCRIPT">
+(function(){
+  function update(){
+    var t=document.getElementById('timer');
+    if(!t)return;
+    if(typeof revisionMode!=='undefined' && revisionMode){
+      t.classList.remove('real-exam-last2');
+      return;
+    }
+    var s=(t.textContent||'').trim();
+    var m=s.match(/^(\d{1,2}):(\d{2})$/);
+    if(!m){
+      t.classList.remove('real-exam-last2');
+      return;
+    }
+    var seconds=parseInt(m[1],10)*60+parseInt(m[2],10);
+    if(seconds>0 && seconds<=120){
+      t.classList.add('real-exam-last2');
+    }else{
+      t.classList.remove('real-exam-last2');
+    }
+  }
+  setInterval(update,100);
+  document.addEventListener('DOMContentLoaded',update);
+})();
+</script>
+</body>
+</html>
